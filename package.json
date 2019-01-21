@@ -18,6 +18,7 @@
     "connect-busboy": "0.0.2",
     "cors": "^2.8.5",
     "express": "^4.16.4",
+    "immer": "^1.10.5",
     "mongodb": "^3.1.10",
     "mongoose": "^5.4.3",
     "nodemon": "^1.18.9",

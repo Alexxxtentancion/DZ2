@@ -1,30 +1,25 @@
-import postBook from 'Api';
+// import {postBook} from 'Api';
+// import {store} from 'index.js';
+// const ACTIONS = {
+//     ADD_BOOK:'Book_input_ADD_BOOK'
+// };
 
-const ACTIONS = {
-    ADD_BOOK:'Book_input_ADD_BOOK'
-};
+// const initialState = {
 
-const initialState = {
-    titile: '',
-    author: '',
-    desc: ''
-}
+// }
+// const BookAddReducer = (state=initialState,action) => {
+//     switch(action.type){
+//         default:return state;
 
-const BookAddReducer = (state=initialState,action) => {
-    switch(action.type){
-        case ACTIONS.ADD_BOOK:
-        return {...state}
-        default:return state;
+//     }
+// }
 
-    }
-}
+// export const addBook = (book) => async(dispatch) =>{
+//     const res = await postBook(book);
+//     const book = res.data;
+//     const test = store.getState();
+//     console.log(test);
+//     // store.getState().books.updateBooks(book);
+// }
 
-export const addBooks = () => async(dispatch) =>{
-    const book = {
-        title: this.state.title,
-        author:this.state.author,
-        desc:this.state.desc
-    }
-    const res = postBook(book);
-    console.log(res)
-}
+// export default BookAddReducer;

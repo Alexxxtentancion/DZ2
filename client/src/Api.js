@@ -5,5 +5,9 @@ export const fetchBooks = () => {
 }
 
 export const postBook = (book) => {
-    return axios.get(`${url}/input`);
+    return axios.post(`${url}/books`,book);
+}
+
+export const delBook = (id) => {
+    return axios.delete(`${url}/books/${id}`)
 }

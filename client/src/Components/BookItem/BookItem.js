@@ -14,7 +14,6 @@ export default class BookItem extends Component {
           className="list-item">{book.title}</Link>
           </h5>
           <h6 className="card-subtitle mb-2 text-muted">{book.author}</h6>
-          <p className="card-text">{book.desc}</p>
           </div>
           </div>
         </div>

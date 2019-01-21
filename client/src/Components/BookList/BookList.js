@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux';
-import {Route,withRouter} from 'react-router-dom';
-import {loadBooks} from 'Components/BookList/reducer';
+import {withRouter} from 'react-router-dom';
+import {loadBooks,updateBooks} from 'Components/App/reducer';
 import BookItem  from 'Components/BookItem/BookItem';
-
 class BookList extends Component {
     
     componentDidMount() {
@@ -20,7 +19,7 @@ class BookList extends Component {
         <div>Загрузка...</div>:
         books.map(book => {
             return(
-                    <BookItem key={book._id} book={book}/>
+                  <BookItem key={book._id} book={book}/>                
             )
         })
     )
@@ -28,7 +27,8 @@ class BookList extends Component {
 }
 
 const mapDispatchToProps = {
-    loadBooks
+    loadBooks,
+    updateBooks
 }
 
 const mapStateToProps = (state => {

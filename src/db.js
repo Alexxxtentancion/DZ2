@@ -16,8 +16,17 @@ exports.connect = function (url,done) {
         state.db = db.db('homework2');
         done();
     })
+
+    // mongoose.connect(config.DB, { useNewUrlParser: true }).then(
+    //     () => {console.log('Database is connected') },
+    //     err => { console.log('Can not connect to the database'+ err)}
+    // );
 }
 
 exports.get = function() {
     return state.db;
 }
+
+// module.exports = {
+//     DB: 'mongodb://localhost:27017/homework2'
+// }
